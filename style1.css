@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@500&display=swap');
+@media only screen and (max-width:767px) {
+    body {
+
+        background-attachment: fixed;
+    }
+
+    .social-links.show {
+        left: 30% !important;
+        /* Shift to the center */
+        transform: translateX(-50%);
+
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("Images/BackgroundDark.jpg");
+    background-size: cover;
+
+}
+
+.social-links {
+    display: flex;
+    /* align-items: center; */
+    justify-content: left;
+    /* Align content to the center horizontally */
+    position: absolute;
+    left: 0;
+    /* Start from the left edge */
+    transform: translateX(-50%);
+    /* Center the element */
+    transition: left 2s, transform 1s;
+    /* Apply smooth transitions */
+
+}
+
+
+.social-links.show {
+    left: 15%;
+    /* Shift to the center */
+    transform: translateX(-50%);
+
+}
+
+.social-links ul li a {
+    color: gray;
+    border: 1px solid red;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 1px 1px 6px red, inset 2px 2px 3px gray;
+    border-radius: 20px;
+    padding: 1.5vh 2.5vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.social-links ul li a:hover {
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+    transition: 200ms ease-in-out;
+}
+
+.social-links ul li {
+
+    list-style-type: none;
+    padding: 3vh;
+}
+
+
+
+.social-links {
+    z-index: 0;
+
+    /* width: 95vw; */
+    overflow: auto;
+    /* height: 95vh; */
+
+
+}
+
+.social-links ul {
+    margin-top: 3vh;
+    padding: 0px;
+
+}
+
+/*  Rest of content */
+/* Initial hiding using opacity */
+.heading {
+    font-size: 24px;
+    text-shadow: 2px 3px 5px gray;
+    color: rgb(3, 194, 194);
+    text-align: center; /* Align text to the center */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease 1s forwards; /* Animation for delayed appearance */
+}
+
+/* Keyframes for the animation */
+@keyframes fadeIn {
+    0% { opacity: 0; } /* Start with opacity 0 */
+    100% { opacity: 1; } /* Gradually transition to opacity 1 after 1 second */
+}
+
+
+.heading span:hover {
+    padding: 15px;
+    border-radius: 20px;
+}
+.aboutme{
+    font-size: 25px;
+    text-shadow: 2px 3px 5px red;
+    color: white;
+    text-align: center;
+    margin-top: 75vh;
+}
+.content{
+    color: white;
+    margin: 0 auto;
+    width: 85vw;
+}
+h3{
+    color:rgb(255, 0, 0);
+    text-shadow: 0px 0px 2px teal;
+}
+.content ul li
+{
+    list-style-type:circle;
+    color: rgb(13, 226, 226);
+}
+.html{
+    border-radius: 10px;
+    border: 2px solid red ;
+    box-shadow: 2px 2px 6px green, inset 2px 2px 6px green;
+    padding: 3px;
+    
+    width: 70vw;
+    margin: 0 auto;
+    color:white;
+    opacity: 70%;
+}
+.boiler_explain
+{
+    padding: 10px;
+    height: 30vh;
+    overflow: auto;
+}
+.boiler_explain pre{
+    opacity: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Lote',sans-serif;
+}
+
+
+

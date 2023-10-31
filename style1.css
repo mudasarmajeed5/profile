@@ -5,12 +5,23 @@
         background-attachment: fixed;
     }
 
+    .social-links {
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+        transition: left 2s, transform 1s;
+    
+    }
+    
+    
     .social-links.show {
-        left: 30% !important;
+        left: 30vw;
         /* Shift to the center */
         transform: translateX(-50%);
-
     }
+    
 }
 
 body {
@@ -20,28 +31,46 @@ body {
 
 }
 
+
+
+
+
+
+
+.social-links ul li {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.social-links ul li.show {
+    opacity: 1;
+}
+
 .social-links {
     display: flex;
-    /* align-items: center; */
     justify-content: left;
-    /* Align content to the center horizontally */
     position: absolute;
     left: 0;
-    /* Start from the left edge */
     transform: translateX(-50%);
-    /* Center the element */
     transition: left 2s, transform 1s;
-    /* Apply smooth transitions */
 
 }
 
 
 .social-links.show {
-    left: 15%;
+    left: 15vw;
     /* Shift to the center */
     transform: translateX(-50%);
-
 }
+
+
+
+
+
+
+
+
+
 
 .social-links ul li a {
     color: gray;
@@ -94,7 +123,7 @@ body {
     color: rgb(3, 194, 194);
     text-align: center; /* Align text to the center */
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 1s ease 1s forwards; /* Animation for delayed appearance */
+    animation: fadeIn 0.5s ease 0.5s forwards; /* Animation for delayed appearance */
 }
 
 /* Keyframes for the animation */

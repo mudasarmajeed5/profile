@@ -7,11 +7,14 @@
     <title>Profile</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="website icon" href="Images/Image 2.webp">
-    
 </head>
 
 <body>
-        <div class="social">
+    <div class="switch">
+     
+        <button id="themeButton">☀️</button>
+    </div>
+    <div class="social">
         <div class="heading">
             <span>Follow Me!</span>
 
@@ -22,8 +25,8 @@
                     <a target="_blank" href="https://github.com/mudasarmajeed5">Github</a>
                 </li>
                 <li><a target="_blank"
-                    href="https://www.snapchat.com/add/mudasar_maj2021?share_id=ODCOOJotbfs&locale=en-US">Snapchat</a>
-                    
+                        href="https://www.snapchat.com/add/mudasar_maj2021?share_id=ODCOOJotbfs&locale=en-US">Snapchat</a>
+
                 </li>
                 <li>
                     <a target="_blank" href="">Discord</a>
@@ -52,7 +55,8 @@
         <h3>Python:</h3>
         <p>
             Hey it's Mudassar. Python's my thing. It's a cool language. With it, I can solve stuff. It's where
-            ideas turn real. Python is my creativity tool, like drawing but with code. It's fun fixing errors; they teach me a lot. In every line, I see my cool ideas come alive. It's not just code; it's my adventure 😉
+            ideas turn real. Python is my creativity tool, like drawing but with code. It's fun fixing errors; they
+            teach me a lot. In every line, I see my cool ideas come alive. It's not just code; it's my adventure 😉
         </p>
         <h3>HTML and CSS:</h3>
         <ul>
@@ -74,7 +78,7 @@
         <div class="html">
             HTML Boiler Plate
 
-            <pre style="color: yellowgreen; white-space: pre-wrap; height: 150px; overflow: auto;">
+            <pre style=" white-space: pre-wrap; height: 150px; overflow: auto;">
   &lt;!DOCTYPE html&gt;
   &lt;html&gt;
   &lt;head&gt;
@@ -91,10 +95,10 @@
 
   ------------
 </pre>
-<br>
+            <br>
         </div>
         <div class="boiler_explain">
-        
+
             <pre style="white-space: pre-wrap;">
 Description:
 
@@ -115,13 +119,15 @@ A paragraph containing the text "This text is aligned in the center.
 &lt;script src="script.js"&gt;&lt;/script&gt; 
 Links the "script.js" file at the end of the body for JavaScript functionality.
 </pre>
-              
-    </div>
 
 
+    <script>
+        document.getElementById('themeButton').addEventListener('click', function () {
+            document.body.classList.toggle('light_theme');
+        });
 
-</div>
 
+    </script>
     <script src="script1.js"></script>
 </body>
 

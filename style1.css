@@ -1,9 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@500&display=swap');
+
+:root{
+    --heading : rgb(3, 194, 194);
+    --social-inset : gray;
+    --social-color: white;
+    --social-offset : red;
+
+        
+
+    --social_color : rgb(255, 255, 255);
+    --social_background : gray; 
+    --content_li : rgb(13, 226, 226); 
+    --boiler-color : rgb(196, 86, 86); 
+
+    
+}
+
+.light_theme
+{
+    --heading : rgb(0, 0, 0);
+    --social-inset : rgb(7, 37, 12);
+    --social-color : rgb(0, 0, 0);
+    --social-offset : rgb(17, 0, 248);
+
+    --social_color : rgb(13, 11, 19);
+    --social_background : rgb(177, 231, 145); 
+    --content_li : rgb(47, 49, 45);
+    --boiler-color: red;
+    
+}
+.light_theme
+{
+    background-image: url('Images/light\ Theem.jpg');
+}
+
 @media only screen and (max-width:767px) {
     body {
 
         background-attachment: fixed;
     }
+    .switch {
+
+        top: 2% !important;
+        right: 2%;
+    }
+    
+    
 
     .social-links {
         display: flex;
@@ -18,17 +60,28 @@
     
     .social-links.show {
         left: 30vw;
-        /* Shift to the center */
+        
         transform: translateX(-50%);
     }
     
 }
 
 body {
+  
     font-family: 'Lato', sans-serif;
-    background-image: url("Images/BackgroundDark.jpg");
+    background-image: url("Images/DarkTheme\,Wallpaper-Fotor.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
+}
+.heading {
+    font-size: 24px;
+    text-shadow: 2px 3px 5px gray;
+    color: var(--heading);
+    text-align: center; /* Align text to the center */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s ease 0.5s forwards; /* Animation for delayed appearance */
 }
 
 
@@ -73,11 +126,10 @@ body {
 
 
 .social-links ul li a {
-    color: gray;
-    border: 1px solid red;
-    font-weight: 500;
+    color: var(--social-color);
+    font-weight: 600;
     text-decoration: none;
-    box-shadow: 1px 1px 6px red, inset 2px 2px 3px gray;
+    box-shadow: 1px 1px 5px var(--social-offset), inset 2px 0px 5px var(--social-inset);
     border-radius: 20px;
     padding: 1.5vh 2.5vh;
     font-family: 'Poppins', sans-serif;
@@ -85,8 +137,9 @@ body {
 }
 
 .social-links ul li a:hover {
-    background-color: gray;
-    color: white;
+    padding: 1.6vh 3vh;
+    background-color: var(--social_background);
+    color: var(--social_color);
     font-weight: 700;
     transition: 200ms ease-in-out;
 }
@@ -117,14 +170,7 @@ body {
 
 /*  Rest of content */
 /* Initial hiding using opacity */
-.heading {
-    font-size: 24px;
-    text-shadow: 2px 3px 5px gray;
-    color: rgb(3, 194, 194);
-    text-align: center; /* Align text to the center */
-    opacity: 0; /* Initially hidden */
-    animation: fadeIn 0.5s ease 0.5s forwards; /* Animation for delayed appearance */
-}
+
 
 /* Keyframes for the animation */
 @keyframes fadeIn {
@@ -140,47 +186,73 @@ body {
 .aboutme{
     font-size: 25px;
     text-shadow: 2px 3px 5px red;
-    color: white;
+    color: var(--social_color);
     text-align: center;
     margin-top: 75vh;
 }
 .content{
-    color: white;
+    color: var(--social_color);
     margin: 0 auto;
     width: 85vw;
 }
 h3{
-    color:rgb(255, 0, 0);
+    color : var(--social-offset);
     text-shadow: 0px 0px 2px teal;
 }
 .content ul li
 {
     list-style-type:circle;
-    color: rgb(13, 226, 226);
+    color: var(--content_li);
 }
 .html{
     border-radius: 10px;
-    border: 2px solid red ;
-    box-shadow: 2px 2px 6px green, inset 2px 2px 6px green;
+    border: 2px solid var(--social-offset) ;
+    box-shadow: 2px 2px 6px var(--social_background), inset 2px 2px 6px var(--social-offset);
     padding: 3px;
     
     width: 70vw;
     margin: 0 auto;
-    color:white;
+    color: var(--social_color);
     opacity: 70%;
 }
 .boiler_explain
 {
+
     padding: 10px;
     height: 30vh;
     overflow: auto;
 }
 .boiler_explain pre{
-    opacity: 50%;
+    
+    padding: 20px;
+    color: var(--heading);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Lote',sans-serif;
+    color: var(--boiler-color);
+    
 }
+.html > pre{
+   
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-
-
+}
+.switch {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 7;
+    
+}
+#themeButton{
+    background-color: rgba(0, 255, 255, 0.527);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: larger;
+}
+#themeButton:hover{
+    cursor: pointer;
+    background-color: gray;
+}

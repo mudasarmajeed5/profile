@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Poppins&display=swap');
 
 * {
-
     margin: 0px;
     padding: 0px;
 }
@@ -24,6 +23,9 @@ body {
     position: absolute;
     left: 5vh;
     top: 2vh;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.3s;
 }
 
 
@@ -37,6 +39,11 @@ body {
     margin-left: 37vw;
 }
 
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 .nav ul {
     display: flex;
     justify-content: space-around;
@@ -61,7 +68,9 @@ body {
 
 }
 
+
 .intro p {
+    
     color: #A3D3FF;
     font-family: Poppins;
     font-size: 35px;
@@ -74,6 +83,9 @@ body {
 }
 
 .name {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.8s;
     margin-top: 5vh;
     color: #00AFFA;
     font-family: Poppins;
@@ -86,6 +98,9 @@ body {
 
 .color-change {
     color: #00AFFA;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s;
 }
 
 .color-change:hover {
@@ -106,9 +121,10 @@ body {
 }
 
 #about {
+    
     height: 100vh;
     margin-top: 46vh;
-    background-color: #061b25c7;
+    background-color: #041118;
     padding: 10px;
 }
 
@@ -127,7 +143,6 @@ body {
 
 #about p {
     color: #F5F5DC;
-    /* Beige */
     font-size: 18px;
     line-height: 1.5;
     margin-top: 2vh;
@@ -160,10 +175,12 @@ textarea {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.submit{
+
+.submit {
     text-align: center;
 }
-.submit button{
+
+.submit button {
     color: white;
     padding: 10px 20px;
     background-color: transparent;
@@ -173,7 +190,8 @@ textarea {
     border-radius: 50px;
     background-color: #6EDB8F;
 }
-.submit button:hover{
+
+.submit button:hover {
     transition: all 0.5s;
     color: black;
     background-color: #6EDB8F;
@@ -188,25 +206,38 @@ textarea {
         left: 35vw;
     }
 
-    body {
-        height: 100vh;
-    }
+
 
     .nav {
         position: sticky;
         top: 3vh;
         margin-top: 10vh;
         margin-left: auto;
+
     }
 
     .nav ul {
+        width: 90vw;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         list-style-type: none;
-        width: 90vw;
+
 
     }
+
+    .nav ul li a {
+
+        font-size: 3.6vw;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: var(--color);
+        padding: 5px 7px;
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+
+
 
     .intro p {
         color: #A3D3FF;
@@ -244,9 +275,8 @@ textarea {
     }
 
     #about {
-        height: 100vh;
         margin-top: 35vh;
-        background-color: #061b25c7;
+        background-color: #041118;
     }
 
     .section-heading {

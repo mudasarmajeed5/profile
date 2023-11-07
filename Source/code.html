@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Source Code</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Poppins&display=swap');
-        body{
+
+        body {
             background-color: rgb(38, 44, 44);
         }
-        *{
-        margin: 0;
-        padding: 0px;
+
+        * {
+            margin: 0;
+            padding: 0px;
         }
-        .nav{
+
+        .nav {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -21,23 +25,38 @@
             margin: 0 auto;
             text-align: center;
         }
-        .nav ul li{
+
+        .nav ul li {
             list-style-type: none;
-            
+
         }
-        .nav ul li a{
+
+        .nav ul li a {
             text-decoration: none;
-            font-family: 'Lobster',sans-serif;
+            font-family: 'Lobster', sans-serif;
             color: aqua;
             font-size: 60px;
         }
-        .nav ul li a:hover{
+
+        .nav ul li a:hover {
             color: brown;
             transition: all 0.5s;
         }
 
+        .nav {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
@@ -45,12 +64,13 @@
                 <a href="html.txt">HTML</a>
             </li>
             <li>
-            <a href="css.txt">CSS</a>
+                <a href="css.txt">CSS</a>
             </li>
             <li>
-            <a href="script.txt">JavaScript</a>
+                <a href="script.txt">JavaScript</a>
             </li>
         </ul>
     </div>
 </body>
+
 </html>

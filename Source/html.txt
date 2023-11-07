@@ -44,11 +44,11 @@
             </li>
 
             <li>
-                <a href="Source/code.html">&lt;/Code&gt;</a>
+                <a href="code.html">&lt;/Code&gt;</a>
             </li>
 
             <li>
-                <a href="Source/@social_handles.html">@Social</a>
+                <a href="">@Social</a>
             </li>
 
             <li>
@@ -82,7 +82,7 @@
                 be continuously updated as I learn more, and the source code will be available for reference in the
                 &lt;code&gt; button... or just <a
                     style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: red;"
-                    href="Source/code.html">click here</a> to directly jump to the raw file.</p>
+                    href="code.txt">click here</a> to directly jump to the raw file.</p>
             <h2 class="section-heading">Learning Sources</h2>
             <p>I acquired Python skills through the #100DaysOfCode challenge by Code with Harry. Currently, I'm honing
                 my web development skills from the Sigma Web_Dev Course playlist available on YT.</p>

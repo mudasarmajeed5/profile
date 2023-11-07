@@ -1,0 +1,422 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #home {
+            position: sticky;
+            top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scroll">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 22 22" fill="none">
+            <path
+                d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                stroke="#42B9FC" stroke-width="2" />
+            <path d="M7 9.5L11 13.5L15 9.5" stroke="#42B9FC" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+    <span id="logo">
+        ɱɱ
+    </span>
+    <div class="nav" id="home">
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="">&lt;/Code&gt;</a>
+            </li>
+
+            <li>
+                <a href="">@Social</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="intro">
+        <p>
+            Hi there,
+        </p>
+        <div class="name">
+            I'm Mudassar
+        </div>
+        <p id="web_design" style="color: white;">
+            I am a <span class="color-change">Web designer.</span>
+        </p>
+        <div id="about" style="overflow-x:auto; overflow-y: hidden;">
+
+            <h2 class="section-heading">What I Do</h2>
+            <p>I am a Beginner in Web Designing & Backend Developement with a passion for creating visually appealing
+                and user-friendly websites.</p>
+
+            <h2 class="section-heading">What I'm Interested In</h2>
+            <p>I enjoy coding, exploring new technologies, and diving into self-improvement and personal development. I
+                am constantly seeking to expand my coding skills, learn new concepts, and grow both personally and
+                professionally.</p>
+
+            <h2 class="section-heading">About This Website</h2>
+            <p>This website is a fun project that I made for enhancing my skills in web design and development. It will
+                be continuously updated as I learn more, and the source code will be available for reference in the
+                &lt;code&gt; button... or just <a
+                    style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: red;"
+                    href="code.txt">click here</a> to directly jump to the raw file.</p>
+            <h2 class="section-heading">Learning Sources</h2>
+            <p>I acquired Python skills through the #100DaysOfCode challenge by Code with Harry. Currently, I'm honing
+                my web development skills from the Sigma Web_Dev Course playlist available on YT.</p>
+
+        </div>
+        <div id="contact">
+            <h2 style="color: red; margin-left: 1vw;" class="section-heading">
+                Contact Me
+            </h2>
+
+            <p style="margin-top: 10px; margin-left: 3vw; color: #F5F5DC; font-size: 18px; line-height: 1.5;">
+                If you'd like to get in
+                touch, please submit your details below!
+            </p>
+            <form action="post">
+                <label for="name">Name : </label>
+                <input style="background-color: transparent; padding: 5px;" type="text" name="name" id="name" placeholder="Enter our Name">
+                <br>
+                <label for="email">Email: &nbsp;</label>
+                <input style="background-color: transparent; padding: 5px;" type="text"> example@gmail.com
+                <br>
+                <br>
+                Leave us a Review: 
+            </form>
+            <textarea placeholder="Anything you type will not be sent to me because I haven't learned javascript yet." name="review" id="review" cols="30" rows="10"></textarea>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+            <div style="padding: 20px; font-family: 'Poppins',sans-serif; line-height: 1.5;" class="ending">
+                This has been written by ChatGPT. <br> <br>
+                I'm ChatGPT, an AI designed to assist and chat with you. I'm here to help you out with questions, give advice, and engage in conversations about various topics. I'll do my best to support you. While sharing insights and suggestions. Let's explore and learn together!
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+CSS:
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Poppins&display=swap');
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --body: #041118;
+    --color: #42B9FC;
+}
+
+body {
+
+    background-color: #041118;
+    color: var(--color)
+}
+
+#logo {
+
+    font-family: 'Great vibes', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    left: 5vh;
+    top: 2vh;
+}
+
+
+#logo:hover {
+    text-shadow: 2px 2px 5px var(--color);
+    cursor: pointer;
+}
+
+.nav {
+    text-align: right;
+    margin-left: 37vw;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 60vw;
+}
+
+.nav ul li a {
+
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color);
+    padding: 7px 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #FFFFFF;
+    background-color: var(--color);
+
+}
+
+.intro p {
+    color: #A3D3FF;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.name {
+    margin-top: 5vh;
+    color: #00AFFA;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10vw;
+}
+
+.color-change {
+    color: #00AFFA;
+}
+
+.color-change:hover {
+    text-shadow: 2px 2px 5px var(--color);
+}
+
+.name:hover {
+    text-shadow: 0px 0px 5px var(--color);
+}
+
+.scroll {
+    display: inline-block;
+    position: relative;
+    top: 90vh;
+    left: 50vw;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#about {
+    height: 100vh;
+    margin-top: 46vh;
+    background-color: #061b25c7;
+    padding: 10px;
+}
+
+.section-heading {
+
+    color: #6EDB8F;
+    font-size: 24px;
+    margin-top: 10px;
+
+}
+
+.section-heading:first-child {
+    margin-top: 50px;
+
+}
+
+#about p {
+    color: #F5F5DC;
+    /* Beige */
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 2vh;
+    margin-left: 3vh;
+}
+
+form {
+    margin: 5px;
+    padding: 20px;
+    margin-left: 5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+
+}
+
+form input {
+    margin: 5px;
+    padding: 5px;
+    color: beige;
+    font-weight: bolder;
+}
+
+textarea {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    margin-left: 23vw;
+    width: 50vw;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.submit{
+    text-align: center;
+}
+.submit button{
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.submit button:hover{
+    transition: all 0.5s;
+    color: black;
+    background-color: var(--body);
+    background-color: #6EDB8F;
+}
+@media only screen and (max-width: 600px) {
+    #logo {
+
+        font-family: 'Great vibes', sans-serif;
+        font-size: 8vh;
+        position: absolute;
+        left: 35vw;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .nav {
+        position: sticky;
+        top: 3vh;
+        margin-top: 10vh;
+        margin-left: auto;
+    }
+
+    .nav ul {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 90vw;
+
+    }
+
+    .intro p {
+        color: #A3D3FF;
+        font-family: Poppins;
+        font-size: 7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        margin-left: 2vw;
+
+    }
+
+    .name {
+        margin-top: 5vh;
+        color: #00AFFA;
+        font-family: Poppins;
+        font-size: 12vw;
+        font-style: normal;
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+
+    #web_design {
+        margin-top: 5vh;
+    }
+
+    .scroll {
+        display: inline-block;
+        position: relative;
+        top: 80vh;
+        left: 45vw;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+
+    #about {
+        height: 100vh;
+        margin-top: 35vh;
+        background-color: #061b25c7;
+    }
+
+    .section-heading {
+
+        color: #6EDB8F;
+        font-size: 24px;
+        margin-top: 10px;
+
+    }
+
+    .section-heading:first-child {
+        margin-top: 8vh;
+    }
+
+    textarea {
+        font-size: 24px;
+        font-family: "cursive", sans-serif;
+        color: white;
+        background-color: transparent;
+        height: 20vh;
+        width: 80vw;
+        margin-left: 7vw;
+    }
+
+
+
+} 
+
+javascript
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollDiv = document.querySelector('.scroll');
+
+        scrollDiv.addEventListener('click', function() {
+            const aboutSection = document.querySelector('#about');
+
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+

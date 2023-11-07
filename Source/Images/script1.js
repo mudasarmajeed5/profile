@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         socialLinks.forEach((link, index) => {
             setTimeout(() => {
                 link.style.opacity = 1;
-            }, 150 + index * 150); // Adjust timing as needed
+            }, 50 + index * 50); // Adjust timing as needed
         });
     }
 
